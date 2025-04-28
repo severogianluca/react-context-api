@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import PostContext from "../context/PostContext";
+import { useContext } from "react";
 function CardPost() {
+
+    const{posts} = useContext(PostContext)
     return (
         <>
             {posts.map((post) => (
